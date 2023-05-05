@@ -15,7 +15,4 @@
       fi
     '';
   };
-  home.shellAliases = {
-    ls = "lsd";
-  };
 }

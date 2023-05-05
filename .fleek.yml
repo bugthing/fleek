@@ -1,0 +1,36 @@
+aliases:
+    fleeks: cd ~/.local/share/fleek
+bling: high
+ejected: false
+flakedir: .local/share/fleek
+git:
+    autocommit: true
+    autopull: true
+    autopush: true
+    enabled: true
+min_version: 0.8.4
+name: Fleek Configuration
+packages:
+    - lsd
+    - asdf-vm
+    - pass
+    - stow
+paths:
+    - $HOME/bin
+    - $HOME/scripts
+    - $HOME/.local/bin
+programs:
+    - dircolors
+shell: bash
+systems:
+    - arch: x86_64
+      hostname: xps15
+      os: linux
+      username: benjamin
+unfree: true
+users:
+    - email: ben@madeofpaper.co.uk
+      name: Ben Martin
+      ssh_private_key_file: ~/.ssh/bugthing
+      ssh_public_key_file: ~/.ssh/bugthing.pub
+      username: benjamin

@@ -19,7 +19,10 @@
   # programs are installed and configuration applied to dotfiles
   home.packages = [
     # user selected packages
-    pkgs.helix
+    pkgs.lsd
+    pkgs.asdf-vm
+    pkgs.pass
+    pkgs.stow
     # Fleek Bling
     pkgs.git
     pkgs.htop

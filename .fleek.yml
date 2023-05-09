@@ -12,7 +12,10 @@ min_version: 0.8.4
 name: Fleek Configuration
 overlays: {}
 packages:
-    - helix
+    - lsd
+    - asdf-vm
+    - pass
+    - stow
 paths:
     - $HOME/bin
     - $HOME/.local/bin
@@ -27,7 +30,7 @@ systems:
 unfree: true
 users:
     - email: benjamin247365@hotmail.com
-      name: Benjamin Martin
+      name: Ben Martin
       ssh_private_key_file: ~/.ssh/bugthing
       ssh_public_key_file: ~/.ssh/bugthing.pub
       username: benjamin

@@ -16,7 +16,6 @@ packages:
     - asdf-vm
     - pass
     - stow
-    - xmrig
 paths:
     - $HOME/bin
     - $HOME/.local/bin

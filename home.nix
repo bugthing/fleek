@@ -23,7 +23,6 @@
     pkgs.asdf-vm
     pkgs.pass
     pkgs.stow
-    pkgs.xmrig
     # Fleek Bling
     pkgs.git
     pkgs.htop

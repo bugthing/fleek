@@ -1,4 +1,5 @@
 { pkgs, misc, ... }: {
+  # DO NOT EDIT: This file is managed by fleek. Manual changes will be overwritten.
     home.username = "benjamin";
     home.homeDirectory = "/home/benjamin";
     programs.git = {
@@ -8,8 +9,8 @@
             graph = "log --decorate --oneline --graph";
             add-nowhitespace = "!git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -";
         };
-        userName = "Ben Martin";
-        userEmail = "ben@madeofpaper.co.uk";
+        userName = "Benjamin Martin";
+        userEmail = "benjamin247365@hotmail.com";
         extraConfig = {
             feature.manyFiles = true;
             init.defaultBranch = "main";

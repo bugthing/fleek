@@ -18,6 +18,7 @@ packages:
     - stow
 paths:
     - $HOME/bin
+    - $HOME/scripts
     - $HOME/.local/bin
 programs:
     - dircolors

@@ -27,6 +27,10 @@ systems:
       hostname: xps15
       os: linux
       username: benjamin
+    - arch: x86_64
+      hostname: xps13
+      os: linux
+      username: benjamin
 unfree: true
 users:
     - email: benjamin247365@hotmail.com

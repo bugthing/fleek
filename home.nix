@@ -23,6 +23,7 @@
     pkgs.asdf-vm
     pkgs.pass
     pkgs.stow
+    pkgs.atuin
     # Fleek Bling
     pkgs.git
     pkgs.htop

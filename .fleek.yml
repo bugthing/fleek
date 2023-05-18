@@ -16,6 +16,7 @@ packages:
     - asdf-vm
     - pass
     - stow
+    - atuin
 paths:
     - $HOME/bin
     - $HOME/scripts

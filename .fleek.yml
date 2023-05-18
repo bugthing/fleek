@@ -1,6 +1,6 @@
 aliases:
     fleeks: cd ~/.local/share/fleek
-bling: default
+bling: high
 ejected: false
 flakedir: .local/share/fleek
 git:
@@ -16,7 +16,6 @@ packages:
     - asdf-vm
     - pass
     - stow
-    - atuin
 paths:
     - $HOME/bin
     - $HOME/scripts

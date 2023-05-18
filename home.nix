@@ -23,7 +23,6 @@
     pkgs.asdf-vm
     pkgs.pass
     pkgs.stow
-    pkgs.atuin
     # Fleek Bling
     pkgs.git
     pkgs.htop
@@ -32,6 +31,13 @@
     pkgs.fzf
     pkgs.ripgrep
     pkgs.vscode
+    pkgs.lazygit
+    pkgs.jq
+    pkgs.yq
+    pkgs.neovim
+    pkgs.neofetch
+    pkgs.btop
+    pkgs.cheat
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
   fonts.fontconfig.enable = true; 

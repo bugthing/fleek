@@ -9,7 +9,7 @@ git:
     autopush: true
     enabled: true
 overlays: {}
-shell: bash
+unfree: true
 packages:
     - lsd
     - asdf-vm
@@ -21,6 +21,7 @@ paths:
     - $HOME/scripts
 programs:
     - dircolors
+shell: bash
 aliases:
     fleeks: cd ~/.local/share/fleek
     gs: git status
@@ -42,7 +43,6 @@ systems:
       hostname: xps13
       os: linux
       username: benjamin
-unfree: true
 users:
     - email: ben@madeofpaper.co.uk
       name: Benjamin Martin

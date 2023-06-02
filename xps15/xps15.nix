@@ -10,7 +10,7 @@
             add-nowhitespace = "!git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -";
         };
         userName = "Benjamin Martin";
-        userEmail = "benjamin247365@hotmail.com";
+        userEmail = "ben@madeofpaper.co.uk";
         extraConfig = {
             feature.manyFiles = true;
             init.defaultBranch = "main";

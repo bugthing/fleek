@@ -10,7 +10,6 @@ git:
     enabled: true
 overlays: {}
 shell: bash
-unfree: true
 packages:
     - lsd
     - asdf-vm
@@ -18,22 +17,21 @@ packages:
     - stow
 paths:
     - $HOME/bin
-    - $HOME/scripts
     - $HOME/.local/bin
+    - $HOME/scripts
 programs:
     - dircolors
 aliases:
     fleeks: cd ~/.local/share/fleek
     gs: git status
     ga: git add
-    gb: git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     gbr: git branch
     gd: git diff
     gco: git checkout
-    vcon: nvim -p $(git status | grep "both modified" | cut -d: -f2)
-    gvl: git log | vim -c "set keywordprg=git\ show" -R -
-    ls: lsd
-    aptup: sudo bash -c "apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade"
+    gb: git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+    vcon: "nvim -p $(git status | grep 'both modified' | cut -d: -f2)"
+    gvl: git log | vim -c 'set keywordprg=git\ show' -R -
+    aptup: sudo bash -c 'apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade'
     lsblk: lsblk -o name,fstype,size,label,uuid
 systems:
     - arch: x86_64
@@ -44,9 +42,10 @@ systems:
       hostname: xps13
       os: linux
       username: benjamin
+unfree: true
 users:
-    - email: benjamin247365@hotmail.com
-      name: Ben Martin
+    - email: ben@madeofpaper.co.uk
+      name: Benjamin Martin
       ssh_private_key_file: ~/.ssh/bugthing
       ssh_public_key_file: ~/.ssh/bugthing.pub
       username: benjamin

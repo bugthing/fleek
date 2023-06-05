@@ -19,6 +19,7 @@
   # programs are installed and configuration applied to dotfiles
   home.packages = [
     # user selected packages
+    pkgs.overmind
     pkgs.lsd
     pkgs.asdf-vm
     pkgs.pass

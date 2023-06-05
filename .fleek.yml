@@ -11,6 +11,7 @@ git:
 overlays: {}
 unfree: true
 packages:
+    - overmind
     - lsd
     - asdf-vm
     - pass

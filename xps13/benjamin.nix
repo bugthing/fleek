@@ -9,8 +9,8 @@
             graph = "log --decorate --oneline --graph";
             add-nowhitespace = "!git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -";
         };
-        userName = "Ben Martin";
-        userEmail = "benjamin247365@hotmail.com";
+        userName = "Benjamin Martin";
+        userEmail = "ben@madeofpaper.co.uk";
         extraConfig = {
             feature.manyFiles = true;
             init.defaultBranch = "main";
@@ -25,4 +25,5 @@
         lfs.enable = true;
         ignores = [ ".direnv" "result" ];
   };
+  
 }

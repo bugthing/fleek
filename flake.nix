@@ -35,14 +35,11 @@
           ./aliases.nix
           ./programs.nix
           # Host Specific configs
-          ./xps15/xps15.nix
-          ./xps15/user.nix
+          ./xps15/benjamin.nix
+          ./xps15/custom.nix
           # self-manage fleek
           ({
            nixpkgs.overlays = [];
-           home.packages = [
-            fleek.packages.x86_64-linux.default
-          ];
           })
 
         ];
@@ -59,14 +56,11 @@
           ./aliases.nix
           ./programs.nix
           # Host Specific configs
-          ./xps13/xps13.nix
-          ./xps13/user.nix
+          ./xps13/benjamin.nix
+          ./xps13/custom.nix
           # self-manage fleek
           ({
            nixpkgs.overlays = [];
-           home.packages = [
-            fleek.packages.x86_64-linux.default
-          ];
           })
 
         ];

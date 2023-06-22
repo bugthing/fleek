@@ -44,6 +44,10 @@ systems:
       hostname: xps13
       os: linux
       username: benjamin
+    - arch: x86_64
+      hostname: terra
+      os: linux
+      username: benjamin
 users:
     - email: ben@madeofpaper.co.uk
       name: Benjamin Martin

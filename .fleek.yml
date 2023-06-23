@@ -1,6 +1,18 @@
-name: Fleek Configuration
-min_version: 0.8.4
-bling: high
+aliases:
+    fleeks: cd ~/.local/share/fleek
+    gs: git status
+    ga: git add
+    gbr: git branch
+    gd: git diff
+    gco: git checkout
+    gb: git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+    vcon: "nvim -p $(git status | grep 'both modified' | cut -d: -f2)"
+    gvl: git log | vim -c 'set keywordprg=git\ show' -R -
+    aptup: sudo bash -c 'apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade'
+    lsblk: lsblk -o name,fstype,size,label,uuid
+bling: default
+blocklist: []
+byo_git: false
 ejected: false
 flakedir: .local/share/fleek
 git:
@@ -8,8 +20,9 @@ git:
     autopull: true
     autopush: true
     enabled: true
+min_version: 0.8.4
+name: Fleek Configuration
 overlays: {}
-unfree: true
 packages:
     - overmind
     - lsd
@@ -23,18 +36,8 @@ paths:
 programs:
     - dircolors
 shell: bash
-aliases:
-    fleeks: cd ~/.local/share/fleek
-    gs: git status
-    ga: git add
-    gbr: git branch
-    gd: git diff
-    gco: git checkout
-    gb: git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
-    vcon: "nvim -p $(git status | grep 'both modified' | cut -d: -f2)"
-    gvl: git log | vim -c 'set keywordprg=git\ show' -R -
-    aptup: sudo bash -c 'apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade'
-    lsblk: lsblk -o name,fstype,size,label,uuid
+track: nixos-unstable
+unfree: true
 systems:
     - arch: x86_64
       hostname: xps15

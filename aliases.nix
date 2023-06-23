@@ -22,11 +22,5 @@
     "lsblk" = "lsblk -o name,fstype,size,label,uuid";
     
     "vcon" = "nvim -p $(git status | grep 'both modified' | cut -d: -f2)";
-    
-    # bat --plain for unformatted cat
-    catp = "bat -P";
-    
-    # replace cat with bat
-    cat = "bat";
     };
 }
